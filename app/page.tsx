@@ -1,65 +1,98 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="bg-black text-white min-h-screen px-6 md:px-20 py-16">
+
+      {/* HERO SECTION */}
+      <section className="mb-24">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          Santhosh M
+        </h1>
+        <p className="text-xl text-gray-400 mb-6">
+          Full Stack Developer | AI Enthusiast | Production-Ready Engineer
+        </p>
+        <p className="max-w-3xl text-gray-300">
+          Santhosh M is a Full Stack Developer Trainee at KUVI Networks,
+          building scalable Flutter and Next.js applications and AI-powered
+          healthcare platforms.
+        </p>
+
+        <div className="mt-8 flex gap-4">
+          <a href="#projects" className="bg-blue-600 px-6 py-3 rounded-xl">
+            View Projects
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener"
+            className="border border-gray-500 px-6 py-3 rounded-xl">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section className="mb-24">
+        <h2 className="text-3xl font-semibold mb-6">About</h2>
+        <p className="text-gray-300 leading-8">
+          I'm Santhosh M, a Full Stack Developer specializing in Python,
+          Django, Flutter, Next.js, and Nest.js. At KUVI Networks, I contribute
+          to a production Flutter application published on the Google Play
+          Store, working on API integrations, UI improvements, and payment
+          gateway implementation.
+        </p>
+        <p className="text-gray-300 leading-8 mt-4">
+          I also developed the AI Medical Assistant platform featuring disease
+          prediction using XGBoost, appointment booking, analytics dashboards,
+          and an AI chatbot — built with Django and machine learning models.
+        </p>
+      </section>
+
+      {/* TECH STACK */}
+      <section className="mb-24">
+        <h2 className="text-3xl font-semibold mb-6">Tech Stack</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-300">
+          <div>Python</div>
+          <div>Django</div>
+          <div>Flutter</div>
+          <div>Next.js</div>
+          <div>Nest.js</div>
+          <div>PostgreSQL</div>
+          <div>MySQL</div>
+          <div>Tailwind CSS</div>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section id="projects" className="mb-24">
+        <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
+
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold">AI Medical Assistant</h3>
+          <p className="text-gray-400 mt-2">
+            AI-powered healthcare platform with disease prediction,
+            appointment management, analytics dashboards, and chatbot.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div>
+          <h3 className="text-xl font-semibold">
+            Production Flutter App – KUVI Networks
+          </h3>
+          <p className="text-gray-400 mt-2">
+            Contributed to a live production mobile application,
+            implemented UI features, API integrations, and payment gateway.
+          </p>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CONTACT */}
+      <section>
+        <h2 className="text-3xl font-semibold mb-6">Contact</h2>
+        <p className="text-gray-300">
+          Email: santhoshm0731@gmail.com
+        </p>
+        <p className="text-gray-300">
+          GitHub: github.com/santhoshm0731-ui
+        </p>
+      </section>
+
+    </main>
   );
 }
