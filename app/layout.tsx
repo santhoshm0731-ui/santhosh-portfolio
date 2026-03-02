@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Santhosh M | Full Stack Developer",
   description:
-    "Santhosh M is a Full Stack Developer specializing in Python, Django, Flutter, and Next.js. Full Stack Developer Trainee at KUVI Networks and creator of AI Medical Assistant.",
+    "Santhosh M is a Full Stack Developer specializing in Python, Django, Flutter, and Next.js.",
+  verification: {
+    google: "google49aaec8e4989ec25.html",
+  },
 };
 
 export default function RootLayout({
