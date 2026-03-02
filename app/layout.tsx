@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Santhosh M | Full Stack Developer",
   description:
-    "Santhosh M is a Full Stack Developer specializing in Python, Django, Flutter, and Next.js.",
+    "Santhosh M is a Full Stack Developer specializing in Python, Django, Flutter, and Next.js. Full Stack Developer Trainee at KUVI Networks and creator of AI Medical Assistant.",
   verification: {
-    google: "iDxmrihAbqyHmQlRN8anMh1vL1BDWbK248-fDxHFz1Y" ,
+    google: "iDxmrihAbqyHmQlRN8anMh1vL1BDWbK248-fDxHFz1Y",
   },
 };
 
