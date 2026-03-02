@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Santhosh M is a Full Stack Developer specializing in Python, Django, Flutter, and Next.js.",
   verification: {
-    google: "google49aaec8e4989ec25.html",
+    google: "iDxmrihAbqyHmQlRN8anMh1vL1BDWbK248-fDxHFz1Y" ,
   },
 };
 
